@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:promultimedia/core/router/gorouter.dart';
+import 'package:promultimedia/core/theme/theme.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +11,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp.router(
+      title: "Promultimedia",
+      theme: superTheme,
+      routerConfig: goRouter,
+      builder: (context, child) => child!,
     );
   }
 }

@@ -1,3 +1,3 @@
 class Assets {
-  String tutorial(int id) => "assets/tutorial_$id.png";
+  static String tutorial(int id) => "assets/tutorial_$id.png";
 }

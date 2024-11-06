@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:promultimedia/core/router/routes.dart';
 import 'package:promultimedia/core/theme/constants/fonts.dart';
 import 'package:promultimedia/core/theme/styles/button_styles.dart';
 
@@ -12,7 +14,7 @@ class SkipOrGoButton extends StatelessWidget {
     return Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
       ElevatedButton(
         style: ButtonStyles.transparent,
-        onPressed: () {},
+        onPressed: () => context.push(Routes.dashboard),
         child: const Text(
           "Pomiń",
           style: Fonts.size18w700Grey,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:promultimedia/core/router/routes/auth_routes.dart';
 import 'package:promultimedia/core/router/routes/dashboard_routes.dart';
 import 'package:promultimedia/core/router/routes/tutorial_pageview_routes.dart';
 
@@ -10,8 +11,8 @@ final GoRouter goRouter = GoRouter(
   navigatorKey: rootNavKey,
   debugLogDiagnostics: true,
   routes: [
-    //  ...authRoutes,
+    ...authRoute,
     ...dashboardRoute,
-    ...tutorialPages
+    ...tutorialRoute,
   ],
 );

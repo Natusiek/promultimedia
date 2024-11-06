@@ -15,6 +15,7 @@ class ButtonStyles {
   );
 
   static ButtonStyle transparent = ElevatedButton.styleFrom(
+    //  padding: const EdgeInsets.all(0),
     backgroundColor: Colors.transparent,
   );
 }

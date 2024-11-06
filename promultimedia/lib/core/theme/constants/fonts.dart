@@ -27,6 +27,13 @@ class Fonts {
     color: Colors.white,
   );
 
+  //ANCHOR - 20
+  static const size21w700 = TextStyle(
+    fontSize: 21,
+    fontWeight: FontWeight.w700,
+    color: Colors.white,
+  );
+
   //ANCHOR - 22
   static const size24w900 = TextStyle(
     fontSize: 22,

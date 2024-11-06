@@ -5,10 +5,10 @@ import 'package:promultimedia/core/theme/constants/fonts.dart';
 import 'package:promultimedia/features/tutorial/presentation/widgets/skip_or_go_button.dart';
 import 'package:promultimedia/shared/image_compressor.dart';
 
-class TutorialOnePage extends StatelessWidget {
+class TutorialSecondPage extends StatelessWidget {
   final PageController pageController;
 
-  const TutorialOnePage({super.key, required this.pageController});
+  const TutorialSecondPage({super.key, required this.pageController});
 
   @override
   Widget build(BuildContext context) {
@@ -18,27 +18,18 @@ class TutorialOnePage extends StatelessWidget {
         const Column(
           children: [
             Text(
-              "Spędzaj czas",
-              style: Fonts.size24,
+              "Bierz udział",
+              style: Fonts.size24w900,
             ),
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  "kreatywnie",
-                  style: Fonts.size19w900,
-                ),
-                Text(
-                  "!",
-                  style: Fonts.size19,
-                ),
-              ],
+            Text(
+              "w wydarzeniach!",
+              style: Fonts.size24,
             ),
           ],
         ),
         ImageCompressor(
           height: context.fullHeight * 0.55,
-          image: Assets.tutorial(1),
+          image: Assets.tutorial(2),
         ),
         SkipOrGoButton(pageController: pageController)
       ],

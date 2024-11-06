@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:promultimedia/features/tutorial/presentation/subpages/tutorial_one_page.dart';
 
 class TutorialPage extends StatefulWidget {
   const TutorialPage({super.key});
@@ -9,11 +10,12 @@ class TutorialPage extends StatefulWidget {
 
 class _TutorialPageState extends State<TutorialPage> {
   late PageController _pageController;
-  late List<Widget> pages;
+  late List<Widget> _pages;
 
   @override
   void initState() {
     _pageController = PageController();
+    _pages = [TutorialOnePage(pageController: _pageController)];
     super.initState();
   }
 
@@ -23,8 +25,8 @@ class _TutorialPageState extends State<TutorialPage> {
       body: SafeArea(
         child: PageView.builder(
           controller: _pageController,
-          itemCount: pages.length,
-          itemBuilder: (_, id) => pages[id],
+          itemCount: _pages.length,
+          itemBuilder: (_, id) => _pages[id],
         ),
       ),
     );

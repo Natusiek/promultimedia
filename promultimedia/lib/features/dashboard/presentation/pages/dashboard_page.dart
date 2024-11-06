@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:promultimedia/core/router/routes.dart';
 import 'package:promultimedia/core/theme/styles/button_styles.dart';
 
 class DashboardPage extends StatelessWidget {
@@ -14,12 +16,12 @@ class DashboardPage extends StatelessWidget {
           children: [
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               ElevatedButton(
-                style: ButtonStyles.size19w700v8h30borderWhite,
-                onPressed: () {},
+                style: ButtonStyles.v8h30borderWhite,
+                onPressed: () => context.push(Routes.tutorial),
                 child: const Text("PageView"),
               ),
               ElevatedButton(
-                style: ButtonStyles.size19w700v8h30borderWhite,
+                style: ButtonStyles.v8h30borderWhite,
                 onPressed: () {},
                 child: const Text("SubPage"),
               ),

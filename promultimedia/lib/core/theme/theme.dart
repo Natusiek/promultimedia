@@ -20,6 +20,7 @@ ThemeData get superTheme => ThemeData(
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
+          shadowColor: Colors.transparent,
           backgroundColor: SupermediaColors.primaryContainer,
           shape: Borders.shape50,
           padding: Paddings.v8h50,
